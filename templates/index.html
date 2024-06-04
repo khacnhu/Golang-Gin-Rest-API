@@ -1,0 +1,19 @@
+{{ template "header.html" }}
+
+
+{{ template "footer.html" }}
+
+
+<div>
+    <h1>TRAN KHAC NHU STUDY GOLANG</h1>
+    <p> Chuc mung mai ben nhau ban nhe kaka </h1>
+</div>
+
+{{range .videos}}
+    <div>
+        <h2> {{ .Title}} </h2> 
+        <h4> {{ .Description}}  </h4>
+    </div>
+    <div> ---------------------------------------------------------------------- </div>
+
+{{end}}
